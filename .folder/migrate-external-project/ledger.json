@@ -1,0 +1,86 @@
+[
+  {
+    "capability": "code",
+    "source": "FaceAttend AI (AI Studio React+Vite export)",
+    "outcome": "migrate to TanStack Start, keep design/pages/images",
+    "status": "in_progress",
+    "next_action": "port pages and replace mock context"
+  },
+  {
+    "capability": "schema",
+    "source": "none (frontend-only, localStorage + mockData.ts)",
+    "outcome": "create multi-institute schema in Lovable Cloud",
+    "status": "in_progress",
+    "next_action": "apply migration"
+  },
+  {
+    "capability": "records",
+    "source": "mockData.ts demo records only",
+    "outcome": "discard by user request; no real records exist",
+    "status": "accepted",
+    "next_action": "none"
+  },
+  {
+    "capability": "auth identities",
+    "source": "hard-coded demo accounts",
+    "outcome": "replace with real email/password accounts; demo accounts removed",
+    "status": "in_progress",
+    "next_action": "build login, recovery, institute registration"
+  },
+  {
+    "capability": "authorization",
+    "source": "client-side role switcher",
+    "outcome": "per-institute RLS with admin/teacher/student roles table",
+    "status": "in_progress",
+    "next_action": "policies + verification"
+  },
+  {
+    "capability": "uploaded file bytes",
+    "source": "data URLs in localStorage",
+    "outcome": "private storage bucket per institute",
+    "status": "in_progress",
+    "next_action": "bucket + policies"
+  },
+  {
+    "capability": "face recognition",
+    "source": "simulated random detections",
+    "outcome": "real in-browser face descriptors and matching",
+    "status": "in_progress",
+    "next_action": "enrollment + live matching"
+  },
+  {
+    "capability": "external providers",
+    "source": "@google/genai listed but unused",
+    "outcome": "not needed",
+    "status": "accepted",
+    "next_action": "none"
+  },
+  {
+    "capability": "public endpoints/webhooks/schedules",
+    "source": "none",
+    "outcome": "none",
+    "status": "accepted",
+    "next_action": "none"
+  },
+  {
+    "capability": "secrets",
+    "source": "GEMINI_API_KEY placeholder (platform)",
+    "outcome": "not needed",
+    "status": "accepted",
+    "next_action": "none"
+  },
+  {
+    "capability": "verification",
+    "source": "-",
+    "outcome": "end-to-end browser test of registration, admin, teacher, student flows",
+    "status": "pending",
+    "next_action": "test after build"
+  },
+  {
+    "capability": "end-to-end verification",
+    "source": "live preview",
+    "outcome": "verified",
+    "status": "verified",
+    "next_action": "Password-reset email delivery still needs a real inbox to confirm."
+  }
+]
